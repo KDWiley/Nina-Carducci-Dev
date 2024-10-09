@@ -58,12 +58,14 @@
     });
 
     $(".gallery").on("click", ".nav-link", $.fn.mauGallery.methods.filterByTag);
-    $(".gallery").on("click", ".mg-prev", () =>
+    $(".gallery").on("click", ".mg-prev", () => {
+      console.log("Prev button clicked");
       $.fn.mauGallery.methods.prevImage(options.lightboxId)
-    );
-    $(".gallery").on("click", ".mg-next", () =>
+  });
+    $(".gallery").on("click", ".mg-next", () => {
+      console.log("Next button clicked");
       $.fn.mauGallery.methods.nextImage(options.lightboxId)
-    );
+   });
   };
   $.fn.mauGallery.methods = {
     createRowWrapper(element) {
