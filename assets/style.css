@@ -121,25 +121,12 @@ body {
   padding-bottom: 100%;
 }
 
-/* Grid layout for the gallery */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Consistent grid layout */
-  grid-gap: 10px;
-}
-
-/* Make sure both <picture> and <img> elements behave the same way */
-.gallery picture,
-.gallery img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images are cropped to fit their containers */
-  display: block; /* Remove any unwanted gaps */
-}
-
-/* Padding for the images */
 .gallery-item {
-  padding: 0.5em; /* Padding around each image */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: .5em;
 }
 
 .mg-prev,
