@@ -16,28 +16,35 @@
     />
     <script type="application/ld+json">
       {
-          "@context": "https://schema.org/",
-          "@type": "LocalBusiness",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "68 avenue Alsace-Lorraine",
-            "postalCode": "33200",
-            "addressLocality": "Bordeaux, France
-          },
-            "telephone": "+33 (0)5 56 67 78 89,
-            "openingHoursSpecification": [
-        {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": [
+        "@context": "https://schema.org/",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci - Professional Photographer",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "France"
+        },
+        "telephone": "+33 (0)5 56 67 78 89",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
               "Monday",
               "Tuesday",
               "Wednesday",
               "Thursday",
               "Friday"
-          ],
-              "opens": "10:00",
-              "closes": "19:00"
-        }}
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "image": "http://127.0.0.1:3000/assets/images-webp/nina.webp",
+        "url": "http://127.0.0.1:3000/index.html",
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+      }
     </script>
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@Twitter" />
@@ -169,7 +176,16 @@
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span
+            class="visually-hidden"
+            style="
+              opacity: 1;
+              color: rgb(0, 0, 0);
+              background-color: rgb(255, 255, 255);
+            "
+          >
+            Previous
+          </span>
         </button>
         <button
           class="carousel-control-next"
@@ -178,7 +194,16 @@
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span
+            class="visually-hidden"
+            style="
+              opacity: 1;
+              color: rgb(0, 0, 0);
+              background-color: rgb(255, 255, 255);
+            "
+          >
+            Next
+          </span>
         </button>
       </div>
     </div>
